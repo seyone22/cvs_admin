@@ -1,6 +1,18 @@
+:root {
+    --color1: #000000;
+    --color2: #F2EBE5;
+    --color3: #9F496E;
+    --color4: #647295;
+    --color5: #2B262D;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 html,
 body {
     height: 100%;
+    background-color: var(--color2) !important;
 }
 
 body {
@@ -8,11 +20,12 @@ body {
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #f5f5f5;
+    background-color: var(--color2);
+    flex-direction: column;
 }
 
 .form-signin {
-    max-width: 330px;
+    max-width: 430px;
     padding: 15px;
 }
 
@@ -30,4 +43,8 @@ body {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+  }
+
+  .themed {
+    color:var(--color3);
   }
